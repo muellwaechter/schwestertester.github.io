@@ -4,12 +4,12 @@
 // @version 0.8.6c
 // @match *://younow.com/*
 // @match *://www.younow.com/*
-// @namespace https://github.com/SchwesterKira/JuhNau-Darkmode
+// @namespace https://github.com/schwestertester/JuhNau-Darkmode
 // @grant    GM_getValue
 // @grant    GM_setValue
 // @grant    GM_listValues
-// @updateURL https://SchwesterKira.github.io/DarkMode.2.0.beta.user.js
-// @downloadURL https://SchwesterKira.github.io/DarkMode.2.0.beta.user.js
+// @updateURL https://schwestertester.github.io/DarkMode.2.0.beta.user.js
+// @downloadURL https://schwestertester.github.io/DarkMode.2.0.beta.user.js
 // @run-at   document-start
 // ==/UserScript==
 
@@ -23,7 +23,7 @@ var inWindow = function()
 {
     window.darkMode = {
 		'version': '0.8.6c',
-		'base': 'https://SchwesterKira.github.io/'
+		'base': 'https://schwestertester.github.io/'
 	};
 };
 
