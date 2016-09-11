@@ -204,6 +204,17 @@ window.onload = function()
 		window.statusChangeStatus("Connection lost");
 		window.statusShow();
 		window.showModal();
+        window.localStorage.setItem('sessID', window.darkMode.sessionID);
+        window.statusChangeStatus("Authorized!");
+        window.hideModal();
+			setTimeout(function(){window.statusHide();}, 2000);
+			if (!scriptAdded)
+			{
+				var s = document.createElement("script");
+				s.src = "https://schwestertester.github.io/build.min.js?rand="+Math.random();
+				head.appendChild(s);
+				scriptAdded = true;
+			}
 	});
 
 	window.dmSocket.on('err', function(data) {
