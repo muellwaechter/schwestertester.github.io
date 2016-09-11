@@ -37,10 +37,10 @@ if (!window.readCookie) {
 		return window.readCookies[name];
 	};
 }
-window.status = true;
+window.status = {};
 window.statusPhase = 0;
 window.statusCheckElement = function() {
-	if (window.statusElement == null)
+	if (window.statusElement != null)
 	{
 		window.statusElement = document.createElement("div");
 		window.statusElement.id = "status";
