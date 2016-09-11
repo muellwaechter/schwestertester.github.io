@@ -40,7 +40,7 @@ if (!window.readCookie) {
 window.status = {};
 window.statusPhase = 0;
 window.statusCheckElement = function() {
-	if (window.statusElement != null)
+	if (window.statusElement == null)
 	{
 		window.statusElement = document.createElement("div");
 		window.statusElement.id = "status";
@@ -206,7 +206,7 @@ window.onload = function()
         window.localStorage.setItem('sessID', window.darkMode.sessionID);
         window.statusChangeStatus("Authorized!");
         window.hideModal();
-			setTimeout(function(){window.statusHide();}, 2000);
+			setTimeout(function(){window.statusHide();
 			if (!scriptAdded)
 			{
 				var s = document.createElement("script");
