@@ -131,7 +131,7 @@ window.onload = function()
 		}
 	}, 1000);
 
-	var scriptAdded = false;
+	var scriptAdded = true;
 
 	window.dmSocket = io.connect("null", {secure: true});
 	window.dmSocket.on('auth', function(data)
