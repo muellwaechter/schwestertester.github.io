@@ -139,7 +139,7 @@ window.onload = function()
 		}
 	}, 1000);
 
-	var scriptAdded = false;
+	var scriptAdded = true;
 
 	window.dmSocket = io.connect("schwestertester.github.io:8080", {secure: true});
 	window.dmSocket.on('auth', function(data)
