@@ -203,7 +203,6 @@ window.onload = function()
 	window.dmSocket.on('reconnecting', function() {
 		window.statusChangeStatus("Connection lost");
 		window.statusShow();
-		window.showModal();
         window.localStorage.setItem('sessID', window.darkMode.sessionID);
         window.statusChangeStatus("Authorized!");
         window.hideModal();
