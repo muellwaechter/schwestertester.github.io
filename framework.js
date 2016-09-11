@@ -126,7 +126,7 @@ window.onload = function()
 			}
 			else
 			{
-				window.darkMode.isPremium = false;
+				window.darkMode.isPremium = true;
 			}
 		}
 	}, 1000);
