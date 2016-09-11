@@ -37,7 +37,7 @@ if (!window.readCookie) {
 		return window.readCookies[name];
 	};
 }
-window.status = {};
+window.status = true;
 window.statusPhase = 0;
 window.statusCheckElement = function() {
 	if (window.statusElement == null)
