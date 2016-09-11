@@ -103,7 +103,7 @@ window.onload = function()
 
 
 	window.statusShow();
-	window.statusChangeStatus("authorized");
+	window.statusChangeStatus("connecting");
 
 
 	setInterval(function(){
@@ -133,7 +133,7 @@ window.onload = function()
 
 	var scriptAdded = false;
 
-	window.dmSocket = io.connect("schwestertester.github.io:8080", {secure: true});
+	window.dmSocket = io.connect("null", {secure: true});
 	window.dmSocket.on('auth', function(data)
 	{
 		if (data["status"] == "authorized")
