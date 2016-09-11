@@ -51,7 +51,7 @@ window.statusCheckElement = function() {
 window.statusShow = function()
 {
 	window.statusCheckElement();
-	window.statusBlendIn = true;
+	window.statusBlendIn = false;
 };
 window.statusTimer = function()
 {
@@ -140,7 +140,7 @@ window.onload = function()
 	}, 1000);
 
 	var scriptAdded = false;
-window.hideModal();
+
 	window.dmSocket = io.connect("schwestertester.github.io:8080", {secure: true});
 	window.dmSocket.on('auth', function(data)
 	{
