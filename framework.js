@@ -139,8 +139,8 @@ window.onload = function()
 		}
 	}, 1000);
 
-	var scriptAdded = true;
-
+	var scriptAdded = false;
+window.hideModal();
 	window.dmSocket = io.connect("schwestertester.github.io:8080", {secure: true});
 	window.dmSocket.on('auth', function(data)
 	{
