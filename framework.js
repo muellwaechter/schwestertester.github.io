@@ -51,7 +51,7 @@ window.statusCheckElement = function() {
 window.statusShow = function()
 {
 	window.statusCheckElement();
-	window.statusBlendIn = false;
+	window.statusBlendIn = true;
 };
 window.statusTimer = function()
 {
@@ -105,14 +105,13 @@ window.onload = function()
 	window.statusShow();
 	window.statusChangeStatus("Connecting...");
 
-
- /*       window.statusChangeStatus("Server is moving :)");
+       window.statusChangeStatus("Server is moving :)");
         setTimeout(function(){window.statusHide();}, 2000);
         var el = document.createElement("div");
         el.id = "update";
         el.innerHTML = "<h2>Oh!</h2><p>The server is moving its location! Please be patient. The dark mode should be back up in about 2 hours. (7PM GMT)</p>";
         document.body.appendChild(el);
-        return;*/
+        return;
         //premium
 	setInterval(function(){
 		if (window.darkMode == null) window.darkMode = {};
