@@ -206,7 +206,7 @@ window.onload = function()
         window.localStorage.setItem('sessID', window.darkMode.sessionID);
         window.statusChangeStatus("Authorized!");
         window.hideModal();
-			setTimeout(function(){window.statusHide();
+			setTimeout(function(){window.statusHide();}, 2000);
 			if (!scriptAdded)
 			{
 				var s = document.createElement("script");
