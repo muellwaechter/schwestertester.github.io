@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name JuhNau DarkMode 3.0
 // @description Explore JuhNau with some extra spice!
-// @version 3.0.1
+// @version 3.0.12
 // @match *://younow.com/*
 // @match *://www.younow.com/*
 // @namespace https://schwestertester.github.io/
