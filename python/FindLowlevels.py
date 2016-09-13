@@ -11,7 +11,7 @@ headers = {
 'Connection': 'keep-alive',
 'Host': 'www.younow.com',
 'Referer': 'https://www.younow.com/explore/',
-'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/52.0.2743.116 Chrome/52.0.2743.116 Safari/537.36',
+'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36',
 }
 
 def get_users(start):
