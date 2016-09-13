@@ -22,7 +22,7 @@ def get_users(start):
     return data
 
 def streams_total():
-    url = "https://www.younow.com/php/api/younow/trendingUsers/locale=ww/numberOfRecords=20/startFrom=1000000"
+    url = "https://www.younow.com/php/api/younow/trendingUsers/locale=ww/numberOfRecords=50/startFrom=1000000"
     response = requests.get(url, data=payload, headers=headers)
     response.raise_for_status()
     data = response.json()['total']
