@@ -41,8 +41,7 @@ for counter in range(0,g+40,50):
 
 
 
-
-#picture "https://ynassets.younow.com/broadcastdynamic/live/"broadcastID"/"broadcastID".jpg"
+            print "https://ynassets.younow.com/broadcastdynamic/live/" + i['broadcastId'] +"/"+ i['broadcastId']+ ".jpg"
 
 
 
